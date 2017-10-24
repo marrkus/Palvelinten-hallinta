@@ -41,3 +41,4 @@ file { '/etc/apache2/mods-enabled/userdir.load':
 
 
 sudo puppet apply -e 'class {apache:}'
+
