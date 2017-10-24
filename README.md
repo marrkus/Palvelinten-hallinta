@@ -5,17 +5,17 @@ Based on Configuration Management Course by Tero Karvinen. http://terokarvinen.c
 
 Apache2 module for Puppet:
 
-class apache {
-        package {"apache2":
+	class apache {
+        	package {"apache2":
                 ensure => "installed",
         }
 
-file {"/var/www/html/index.html":
+	file {"/var/www/html/index.html":
                 content=>"Welcome\n",
         }
 
 
-service {"apache2":
+	service {"apache2":
                 ensure=>"running",
                 enable=>"true",
                 require=>Package["apache2"],
@@ -23,7 +23,7 @@ service {"apache2":
 
 
 
-file { '/etc/apache2/mods-enabled/userdir.load':
+	file { '/etc/apache2/mods-enabled/userdir.load':
                 ensure => 'link',
                 target => '/etc/apache2/mods-available/userdir.load',
                 notify => Service["apache2"],
@@ -40,4 +40,4 @@ file { '/etc/apache2/mods-enabled/userdir.load':
 }
 
 
-sudo puppet apply -e 'class {apache:}'
+	sudo puppet apply -e 'class {apache:}'
