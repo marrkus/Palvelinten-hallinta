@@ -1,0 +1,2 @@
+# Palvelinten-hallinta
+Puppet training
