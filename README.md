@@ -35,7 +35,7 @@ Apache2 module for Puppet:
                 target => '/etc/apache2/mods-available/userdir.conf',
                 notify => Service["apache2"],
                 require => Package["apache2"],
-   }
+   	}
 
 }
 
