@@ -474,6 +474,10 @@ https://www.puppetcookbook.com/
 
 Java koodeja: https://www.cs.utexas.edu/~scottm/cs307/codingSamples.htm
 
+Eclipse ohjeita: https://www.tutorialspoint.com/eclipse/eclipse_create_java_project.htm
+
+HTML ohjeita: https://www.w3schools.com/html/html_elements.asp
+
 
 
 
